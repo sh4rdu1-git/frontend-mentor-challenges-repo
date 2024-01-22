@@ -1,0 +1,139 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+/* COLORS */
+:root {
+  --very-dark-blue: hsl(233, 47%, 7%);
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+  --white: hsl(0, 0%, 100%);
+  --slightly-transparent-white-para: hsla(0, 0%, 100%, 0.75);
+  --slightly-transparent-white-stat: hsla(0, 0%, 100%, 0.6);
+}
+
+/* RESET STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Mobile first styling */
+
+body {
+  background-color: var(--very-dark-blue);
+  font-size: 15px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--dark-desaturated-blue);
+}
+
+.picture {
+  width: auto;
+  height: 100%;
+  background-size: cover;
+  line-height: 0;
+  position: relative;
+}
+
+.overlay {
+  background-color: var(--soft-violet);
+  opacity: 75%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  mix-blend-mode: multiply;
+}
+
+.text {
+  padding: 10px;
+  text-align: center;
+}
+
+.tagline {
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  /* font-size: 1.8em; */
+  padding: 10px 0px;
+}
+
+.accent {
+  color: var(--soft-violet);
+}
+
+.paragraph {
+  color: var(--slightly-transparent-white-para);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  /* font-size: 0.9em; */
+  padding: 10px 0px;
+}
+
+.stat-item {
+  padding: 10px 0px;
+}
+
+.stat-title {
+  color: var(--slightly-transparent-white-stat);
+  text-transform: uppercase;
+  font-family: "Lexend Deca", sans-serif;
+  /* font-size: 0.9em; */
+}
+
+.stat-value {
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+/* Attributions */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--white);
+  padding: 10px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Styling for larger screens */
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row-reverse;
+  }
+
+  .picture {
+    flex-grow: 0;
+    width: 100%;
+    height: 550px;
+  }
+
+  .text {
+    text-align: left;
+    line-height: 30px;
+    padding: 0px 50px;
+    margin: auto;
+  }
+
+  .statistics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
