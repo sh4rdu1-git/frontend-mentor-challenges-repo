@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  box-sizing: border-box;
+  --color-green: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey: hsl(0, 0%, 20%);
+  --color-darkgrey: hsl(0, 0%, 12%);
+  --color-offblack: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-offblack);
+  color: var(--color-white);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-darkgrey);
+  width: 25em;
+  border-radius: 1em;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bio__avatar {
+  width: 6em;
+  border-radius: 5em;
+  margin: 2em 0;
+}
+
+.bio__name {
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.bio__location {
+  font-weight: 600;
+  color: var(--color-green);
+}
+
+.bio__quote {
+  font-size: 0.8rem;
+  margin-top: 2em;
+  margin-bottom: 0.8em;
+}
+
+.links-section {
+  margin-bottom: 2em;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.link {
+  background-color: var(--color-grey);
+  text-align: center;
+  width: 20em;
+  padding: 1em;
+  margin: 0.5em;
+  border-radius: 0.5em;
+  transition: all 0.3s ease-in;
+}
+
+.link:hover {
+  background-color: var(--color-green);
+  cursor: pointer;
+}
+
+.link a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link:hover a {
+  color: var(--color-darkgrey);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
