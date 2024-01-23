@@ -1,22 +1,20 @@
 import "./App.css";
+import Footer from "./components/Footer";
+import ResultsSection from "./components/ResultsSection";
 
 function App() {
   return (
     <>
-      Your Result 76 of 100 Great You scored higher than 65% of the people who
-      have taken these tests. Summary Reaction 80 / 100 Memory 92 / 100 Verbal
-      61 / 100 Visual 72 / 100 Continue
-      <div className="attribution">
-        Challenge by{" "}
-        <a
-          href="https://www.frontendmentor.io?ref=challenge"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Frontend Mentor
-        </a>
-        . Coded by <a href="#">Your Name Here</a>.
-      </div>
+      <main>
+        <section className="container">
+          <ResultsSection />
+          <aside className="summary-section">
+            Summary Reaction 80 / 100 Memory 92 / 100 Verbal 61 / 100 Visual 72
+            / 100 Continue
+          </aside>
+        </section>
+      </main>
+      <Footer />
     </>
   );
 }
