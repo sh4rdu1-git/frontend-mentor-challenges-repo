@@ -41,7 +41,7 @@ Active state changes include increased card shadow when hovered on card and high
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [View solution on Frontend Mentor](https://www.frontendmentor.io/solutions/blog-preview-card-using-html-and-css-cRNt9hD89_)
 - Live Site URL: [View live site](https://lively-phoenix-7a9ab6.netlify.app/)
 
 ## My process
