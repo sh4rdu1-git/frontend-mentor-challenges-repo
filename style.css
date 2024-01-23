@@ -16,6 +16,84 @@ body {
   font-family: "Figtree", sans-serif;
 }
 
+.container {
+  background-color: var(--color-yellow);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: var(--color-white);
+  width: 20em;
+  padding: 1em;
+  border: 0.1em solid var(--color-black);
+  border-radius: 1em;
+  box-shadow: 0.5em 0.5em var(--color-black);
+}
+
+.card__illustration {
+  margin-bottom: 0.5em;
+}
+
+.card__illustration__image {
+  width: 18em;
+  border-radius: 0.5em;
+}
+
+.card__info {
+  margin: 0.5em 0;
+}
+
+.card__info__tag {
+  background-color: var(--color-yellow);
+  padding: 0.3em 0.6em;
+  border-radius: 0.2em;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.card__info__date {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 1em 0;
+}
+
+.card__info__heading {
+  margin: 1em 0;
+}
+
+.card__info__text {
+  color: var(--color-grey);
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  margin: 1rem 0;
+}
+
+.card__author {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.card__author__avatar {
+  height: 1.5em;
+}
+
+.card__author__name {
+  margin: 0 1em;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.footer {
+  background-color: var(--color-yellow);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
