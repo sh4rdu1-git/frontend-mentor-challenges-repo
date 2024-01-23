@@ -67,6 +67,11 @@ body {
   margin: 1em 0;
 }
 
+.card__info__heading:hover {
+  color: var(--color-yellow);
+  cursor: pointer;
+}
+
 .card__info__text {
   color: var(--color-grey);
   font-size: 0.8rem;
