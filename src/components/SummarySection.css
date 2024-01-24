@@ -1,0 +1,5 @@
+.summary-section {
+  max-width: 20em;
+  padding: 2em;
+  box-shadow: hsla(224, 30%, 27%, 0.3) 2em 2em 5em;
+}

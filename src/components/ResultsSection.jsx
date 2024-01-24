@@ -1,37 +1,26 @@
+/* eslint react/prop-types: 0 */
 import { useEffect, useState } from "react";
 import "./ResultsSection.css";
 
-const ResultsSection = () => {
-  const [data, setData] = useState([]);
+const ResultsSection = ({ scoreData }) => {
   const [score, setScore] = useState(0);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("../../data.json");
-        const responseData = await response.json();
-        setData(responseData);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-    fetchData();
-
     const totalScoreReducer = (accumulator, currentValue) =>
       accumulator + currentValue.score;
 
-    const totalScore = data.reduce(totalScoreReducer, 0);
-    const averageScore = totalScore / data.length;
+    const totalScore = scoreData.reduce(totalScoreReducer, 0);
+    const averageScore = totalScore / scoreData.length;
 
     setScore(Math.round(averageScore));
-  }, [data]);
+  }, [scoreData]);
 
   return (
     <>
       <aside className="results-section">
-        <p className="results__title">Your Result</p>
+        <h2 className="results__title">Your Result</h2>
         <article className="results__circle">
-          <p className="results__circle__score">{score}</p>
+          <p className="results__circle__score">{score.toString()}</p>
           <p className="results__circle__scoreoutof">of 100</p>
         </article>
         <article className="results__info">

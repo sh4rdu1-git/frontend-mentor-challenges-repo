@@ -1,0 +1,29 @@
+.summary__categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.summary__category__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8em 1em;
+  margin: 0.3em 0;
+  border: 1px solid darkblue;
+  background-color: aquamarine;
+  border-radius: 0.5em;
+}
+
+.summary__category__icon {
+}
+
+.summary__category__text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.summary__category__score {
+  margin-left: 3em;
+}
