@@ -25,6 +25,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: var(--color-cream);
+  min-height: 100vh;
 }
 
 .container {
